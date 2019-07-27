@@ -1,0 +1,29 @@
+html {
+    direction: rtl;
+}
+
+#table-div {
+    display: none;
+    margin: 50px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+
+#message {
+    text-align: center;
+}
+
+#cant-play-message {
+    display: none;
+}

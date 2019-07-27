@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>איקס עיגול</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="../js/index_.js"></script>
+    </head>
+    
+    <body>
+        <h1 id="cant-play-message">השרת תפוס. אנא חכה עד שיתפנה.</h1>
+        <h1 id="wait-message">מחכה לשחקן השני...</h1>
+        <div id="table-div">
+            <table id="table">
+                <tr id="row-1">
+                    <td onclick="set(0, 0)"></td>
+                    <td onclick="set(0, 1)"></td>
+                    <td onclick="set(0, 2)"></td>
+                </tr>
+
+                <tr id="row-2">
+                    <td onclick="set(1, 0)"></td>
+                    <td onclick="set(1, 1)"></td>
+                    <td onclick="set(1, 2)"></td>
+                </tr>
+
+                <tr id="row-3">
+                    <td onclick="set(2, 0)"></td>
+                    <td onclick="set(2, 1)"></td>
+                    <td onclick="set(2, 2)"></td>
+                </tr>  
+            </table>
+        </div>         
+    </body>
+</html>
