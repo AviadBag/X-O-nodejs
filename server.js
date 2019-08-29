@@ -1,9 +1,9 @@
 const http = require('http');
 const io = require('socket.io')(3000);
 
-const get_content_type = require('../test/www/js/content-type');
-const read_file = require('../test/www/js/read-file')
-const win = require('../test/www/js/win');
+const get_content_type = require('./www/js/content-type');
+const read_file = require('./www/js/read-file')
+const win = require('./www/js/win');
 
 let users = {};
 
@@ -84,7 +84,7 @@ io.on('connection', function(socket) {
     });
 
     socket.on('disconnect', function() {
-        console.log(`${users[socket.id]} disconnected...`);
+        console.log(`${users[socket.id]} disconnected.`);
         users = {};
         arr_2d = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']];
         turn = 'X';
